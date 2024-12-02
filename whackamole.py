@@ -14,7 +14,8 @@ def main():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
-            screen.fill("light green")
+            screen.fill(213, 247, 242)
+            screen.blit(mole_image, mole_image.get_rect(topleft=(x, y)))
             pygame.display.flip()
             clock.tick(60)
     finally:
